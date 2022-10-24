@@ -212,7 +212,7 @@ int _getopt_internal(int argc, TCHAR *const *argv, const TCHAR *optstring,
 					_ftprintf(stderr, _T("%s: unrecongnized option `%c%s'\n"), argv[0], argv[optind][0], nextchar);
 				}
 			}
-			nextchar = (TCHAR*) "";
+			nextchar = (PTCHAR) _T("");
 			optind++;
 			optopt = 0;
 			return '?';
